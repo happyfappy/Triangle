@@ -1,11 +1,11 @@
-# Rick Reilly - Triangle Solution
+require_relative 'lib/triangle_puzzle_solver.rb'
 
-# get the file path from console input
-unless ARGV.length > 0
-    puts 'USAGE: ruby solution_triangle.rb /path/to/your/file.txt'
+begin
+  file_path = ConsoleUtils.get_file_path
+rescue
+  puts 'USAGE: ruby triangle_puzzle_solver.rb /path/to/your/file.txt'
   exit
 end
-file_path = ARGV[0]
 
 # an array of the given file's contents in lines
 file_lines = []
