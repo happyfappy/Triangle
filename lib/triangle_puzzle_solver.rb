@@ -1,1 +1,3 @@
 require_relative 'triangle_puzzle_solver/console_utils.rb'
+require_relative 'triangle_puzzle_solver/file_utils.rb'
+require_relative 'triangle_puzzle_solver/maximum_sum_method.rb'
