@@ -20,7 +20,8 @@ describe ConsoleUtils do
         allow(ARGV).to receive(:length).and_return(0)
       end
       
-      it "raises an exception" do
+      it "outputs an error" do
+        expect(STDOUT).to receive(:puts).with('USAGE: ruby triangle_puzzle_solver.rb /path/to/your/file.txt')
         expect{subject}.to raise_error
       end
     end
