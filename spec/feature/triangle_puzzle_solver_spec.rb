@@ -1,5 +1,3 @@
-require 'rspec'
-
 describe "triangle puzzle solver" do
   subject { `ruby triangle_puzzle_solver.rb #{input_file}` }
 
